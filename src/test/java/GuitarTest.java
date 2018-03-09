@@ -29,4 +29,9 @@ public class GuitarTest {
     public void guitarCanFigureOutMarkUp() {
         assertEquals(250, guitar.calculateMarkup());
     }
+
+    @Test
+    public void guitarHasStrings() {
+        assertEquals(6, guitar.getNumberOfStrings());
+    }
 }

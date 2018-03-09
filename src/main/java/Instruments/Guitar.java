@@ -25,4 +25,8 @@ public class Guitar extends Instrument implements ISell, IPlay {
         int profit = (getSellCost() - getStockCost());
         return profit;
     }
+
+    public int getNumberOfStrings() {
+        return numberOfStrings;
+    }
 }
