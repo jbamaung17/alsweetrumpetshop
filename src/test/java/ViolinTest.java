@@ -12,7 +12,7 @@ public class ViolinTest {
 
     @Before
     public void before() {
-        violin = new Violin(InstrumentType.BOWEDSTRINGS, Colour.BROWN, "Stradivarius", "Original", Material.WOOD, 10000, 500000, 6);
+        violin = new Violin(InstrumentType.BOWEDSTRINGS, Colour.BROWN, "Stradivarius", "Original", Material.WOOD, 10000, 500000, 4);
     }
 
     @Test
@@ -23,5 +23,10 @@ public class ViolinTest {
     @Test
     public void violinCanCalculateMarkUp() {
         assertEquals(490000, violin.calculateMarkup());
+    }
+
+    @Test
+    public void violinHasStrings() {
+        assertEquals(4, violin.getNumberOfStrings());
     }
 }
