@@ -25,5 +25,8 @@ public class TubaTest {
         assertEquals(200, tuba.calculateMarkup());
     }
 
-
+    @Test
+    public void tubaHasWeight() {
+        assertEquals(600, tuba.getWeight());
+    }
 }
