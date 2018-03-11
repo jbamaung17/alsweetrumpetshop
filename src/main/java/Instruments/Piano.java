@@ -21,7 +21,7 @@ public class Piano extends Instrument implements ISell, IPlay {
 
     @Override
     public int calculateMarkup() {
-        return (getStockCost() - getSellCost());
+        return (getSellCost() - getStockCost());
     }
 
     public int getNumberOfKeys() {

@@ -20,4 +20,14 @@ public class PianoTest {
     public void pianoHasKeys() {
         assertEquals(69, piano.getNumberOfKeys());
     }
+
+    @Test
+    public void pianoCanPlay() {
+        assertEquals("You tinkle on the keys, feeling a little like Elton John, as you get more than carried away with your rendition of 'Sorry Seems to be the Hardest Word' you notice Simon from Blue in the corner, shaking his head. You've not only disappointed yourself but all the sperm and egg combinations you could have been. You sit in silence, reconsidering your life choices.", piano.play());
+    }
+
+    @Test
+    public void pianoCalculatesMarkup() {
+        assertEquals(20000, piano.calculateMarkup());
+    }
 }
