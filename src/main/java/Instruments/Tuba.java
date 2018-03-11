@@ -24,4 +24,8 @@ public class Tuba extends Instrument implements IPlay, ISell {
         int profit = (getSellCost() - getStockCost());
         return profit;
     }
+
+    public int getWeight() {
+        return weight;
+    }
 }

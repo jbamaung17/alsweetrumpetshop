@@ -19,4 +19,11 @@ public class TubaTest {
     public void tubaCanPlay() {
         assertEquals("As you blow into the mouth piece of the tuba a small mouse pops out looking perturbed, it's cute, but you feel kind of dirty that you put your mouth there.", tuba.play());
     }
+
+    @Test
+    public void tubaCanCalculateMarkup() {
+        assertEquals(200, tuba.calculateMarkup());
+    }
+
+
 }
